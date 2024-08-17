@@ -1,0 +1,19 @@
+[
+   {
+    "default_config" : {
+        "windows" : "Git Bash"
+    },
+    "shell_configs":
+    [
+        {
+            "name": "Git Bash",
+            "cmd": ["C:/Program Files/Git/bin/sh.exe"],
+            "env": {},
+            "enable": true,
+            "default": false,
+            "platforms": ["windows"]
+        }
+    ]
+}
+
+]

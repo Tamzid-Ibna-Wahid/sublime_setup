@@ -1,0 +1,19 @@
+[
+	{ "keys": ["ctrl+0"], "command": "cancel_build" },
+
+ 
+ 
+  
+   {
+        //alt +2 for git bash
+
+       "keys": ["alt+1"],
+       "command": "terminus_open",
+       "args" : {
+           "cmd": ["C:/Program Files/Git/bin/sh.exe"],
+           "cwd": "${file_path:${folder}}",
+           "panel_name": "Terminus"
+       }
+   },
+   
+]

@@ -7,18 +7,43 @@
         if (!file1.is_open() || !file2.is_open()){
             return false;
         }
-        cerr<<"checking.... ";
+        cerr << "checking.... ";
         std::string line1, line2;
+        int line_number = 1; // Line counter
+        bool all_matched = true; // Track overall match status
+
         while (std::getline(file1, line1) && std::getline(file2, line2)) {
-            if (line1 != line2)
-                return false;
+            if (line1 != line2) {
+                cerr << "Mismatch at line " << line_number << ":\n";
+                cerr << "Output: " << line1 << "\nExpected: " << line2 << endl;
+                all_matched = false;
+            }
+            line_number++;
         }
-        return file1.eof() && file2.eof();
+
+        // Check if one file has more lines than the other
+        while (std::getline(file1, line1)) {
+            cerr << "Mismatch at line " << line_number << ": File1 has extra content:\n";
+            cerr << line1 << endl;
+            all_matched = false;
+            line_number++;
+        }
+
+        while (std::getline(file2, line2)) {
+            cerr << "Mismatch at line " << line_number << ": File2 has extra content:\n";
+            cerr << line2 << endl;
+            all_matched = false;
+            line_number++;
+        }
+
+        return all_matched;
     };
-    bool check = compareFiles("output.txt","expected.txt");
-    if (check) cerr<<"OK\n";
-    else cerr<<"Failed!\n";
+
+    bool check = compareFiles("output.txt", "expected.txt");
+    if (check) cerr << "OK\n";
+    else cerr << "Failed!\n";
 #endif
+
 ]]></content>
   <tabTrigger>checker</tabTrigger>
   <description></description>

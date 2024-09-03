@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+
+// calculate a^n
+int binExp(int a, int n) {
+    int res = 1;
+    while (n > 0) {
+        if (n & 1) {
+            res *= a;
+        }
+        a *= a;
+        n >>= 1;
+    }
+    return res;
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>Binary_exp</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

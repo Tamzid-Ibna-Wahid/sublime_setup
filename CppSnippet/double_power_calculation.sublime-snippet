@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+        
+ // a^b^c % M = (a ^ (b^c % M-1)) % M  (if M prime number)
+ 
+ int DoublePower(int a,int b,int c,int M){
+     return  modExp(a ,modExp(b ,c ,M-1), M);
+ }
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>double_power</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

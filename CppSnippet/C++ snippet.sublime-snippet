@@ -34,6 +34,10 @@ ll mod_sub(ll a, ll b) {a = a % mod; b = b % mod; return (((a - b + mod) % mod) 
 ll ceil_div(ll a, ll b) {return a % b == 0 ? a / b : a / b + 1;}
 int lcm(int a, int b){ if(a*b==0) return 0; else return a*b/__gcd(a,b);}
 
+std::vector<pair<int,int>>knight ={{-1,2}, {1,2}, {-1,-2}, {1,-2}, {2,-1}, {2,1}, {-2,-1}, {-2,1}};
+
+const int N = 2e5+10;
+
 
 
 
@@ -54,12 +58,14 @@ void siuuuuu(){
 
 signed main(){
 
-// #ifndef ONLINE_JUDGE
-//freopen("Error.txt", "w", stderr);
-// #endif
+ #ifndef ONLINE_JUDGE
+freopen("Error.txt", "w", stderr);
+ #endif
 
 
 	 fast_cin();
+	 cout << fixed;
+     cout << setprecision(10);
 
     int tt;
     		    tt=1;

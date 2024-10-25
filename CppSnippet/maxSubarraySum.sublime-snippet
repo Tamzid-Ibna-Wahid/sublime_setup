@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+int maxSubarraySum(vector<int> &arr) {
+    int res = arr[0];
+    int maxEnding = arr[0];
+
+    for (int i = 1; i < arr.size(); i++) {
+        maxEnding = max(maxEnding + arr[i], arr[i]);
+        res = max(res, maxEnding);
+    }
+    return res;
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>maxSubarraySum</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

@@ -8,16 +8,17 @@ const int N = 1e7+10;
 bool arr[N]={false};
 void sieve(){
      arr[0]=arr[1]=true;
-     for(int i=2;i*i<=N;i++){
+     for(int i=2;i*i<N;i++){
           if(!arr[i]){
-               for(int j=i*i;j<=N;j+=i) arr[j]=true;     //false=prime  true=composite
+               for(int j=i*i;j<N;j+=i) arr[j]=true;     //false=prime  true=composite
           }
      }
 
-      for(int i=2;i<=N;i++){
+      for(int i=2;i<N;i++){
         if(!arr[i])prime.emplace_back(i);
      }
 }
+
 
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

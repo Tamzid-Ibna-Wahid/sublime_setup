@@ -1,48 +1,56 @@
 <snippet>
   <content><![CDATA[
 #ifndef ONLINE_JUDGE
-    function<bool(string,string)> compareFiles = [](string p1, string p2)->bool {
-        std::ifstream file1(p1);
-        std::ifstream file2(p2);
-        if (!file1.is_open() || !file2.is_open()){
-            return false;
-        }
-        cerr << "checking.... ";
-        std::string line1, line2;
-        int line_number = 1; // Line counter
-        bool all_matched = true; // Track overall match status
+function<bool(string, string)> compareFiles = [](string p1, string p2) -> bool {
+    std::ifstream file1(p1);
+    std::ifstream file2(p2);
 
-        while (std::getline(file1, line1) && std::getline(file2, line2)) {
-            if (line1 != line2) {
-                cerr << "Mismatch at line " << line_number << ":\n";
-                cerr << "Output: " << line1 << "\nExpected: " << line2 << endl;
-                all_matched = false;
-            }
-            line_number++;
-        }
+    if (!file1.is_open() || !file2.is_open()) {
+        return false;
+    }
 
-        // Check if one file has more lines than the other
-        while (std::getline(file1, line1)) {
-            cerr << "Mismatch at line " << line_number << ": File1 has extra content:\n";
-            cerr << line1 << endl;
+    cerr << "checking.... " << "\n";
+    std::string line1, line2;
+    int line_number = 1; // Line counter
+    bool all_matched = true; // Track overall match status
+
+    // Compare files line by line
+    while (std::getline(file1, line1) && std::getline(file2, line2)) {
+        if (line1 != line2) {
+            cerr << "Mismatch at line " << line_number << ":\n";
+            cerr << "Output: " << line1 << "\nExpected: " << line2 << endl;
             all_matched = false;
-            line_number++;
         }
+        line_number++;
+    }
 
-        while (std::getline(file2, line2)) {
-            cerr << "Mismatch at line " << line_number << ": File2 has extra content:\n";
-            cerr << line2 << endl;
-            all_matched = false;
-            line_number++;
-        }
+    // Check if file1 has extra lines
+    while (std::getline(file1, line1)) {
+        cerr << "Mismatch at line " << line_number << ": File1 has extra content:\n";
+        cerr << line1 << endl;
+        all_matched = false;
+        line_number++;
+    }
 
-        return all_matched;
-    };
+    // Check if file2 has extra lines
+    while (std::getline(file2, line2)) {
+        cerr << "Mismatch at line " << line_number << ": File2 has extra content:\n";
+        cerr << line2 << endl;
+        all_matched = false;
+        line_number++;
+    }
 
-    bool check = compareFiles("output.txt", "expected.txt");
-    if (check) cerr << "OK\n";
-    else cerr << "Failed!\n";
+    return all_matched;
+};
+
+bool check = compareFiles("output.txt", "expected.txt");
+if (check)
+    cerr << "OK\n";
+else
+    cerr << "Failed!\n";
 #endif
+
+
 
 ]]></content>
   <tabTrigger>checker</tabTrigger>

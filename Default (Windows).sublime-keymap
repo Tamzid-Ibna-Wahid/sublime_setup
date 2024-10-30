@@ -5,7 +5,7 @@
  
   
    {
-        //alt +2 for git bash
+        // alt + 2 for git bash
 
        "keys": ["alt+1"],
        "command": "terminus_open",

@@ -2,10 +2,9 @@
 {
 	"ignored_packages":
 	[
-		"Terminus",
 		"Vintage",
 	],
-	"font_size": 11,
+	"font_size": 13,
 	"line_padding_top": 2,
 	"line_padding_bottom": 5,
 	"font_face": "Jetbrain Mono",
@@ -26,4 +25,5 @@
 
 
 	"theme": "auto",
+	"index_files": true,
 }

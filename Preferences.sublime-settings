@@ -4,7 +4,7 @@
 	], // Packages to ignore (disable). Add "Vintage" here if you don't want Vim keybindings.
 	"vintage_ctrl_keys": true, // Enables `Ctrl` shortcuts while using Vintage mode (Vim emulation).
 
-	"font_size": 13, // Sets the font size.
+	"font_size": 14, // Sets the font size.
 	"line_padding_top": 2, // Adds padding above each line to increase line spacing.
 	"line_padding_bottom": 5, // Adds padding below each line to increase line spacing.
 	"font_face": "Jetbrain Mono", // Sets the font to "Jetbrain Mono". Make sure this font is installed on your system.
@@ -12,7 +12,6 @@
 
 	"trim_automatic_white_space": false, // If set to `true`, removes trailing whitespace inserted by auto-complete.
 	"translate_tabs_to_spaces": true, // Converts tabs to spaces automatically, ensuring code indentation uses spaces.
-	"trim_trailing_white_space_on_save": true, // Removes trailing whitespace from each line when you save the file.
 	"word_wrap": false, // Disables word wrap so that lines do not automatically wrap; useful for viewing code in a single line.
 	"auto_match_enabled": false, // Disables automatic bracket completion.
 

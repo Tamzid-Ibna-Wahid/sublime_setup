@@ -2,7 +2,6 @@
 	{ "keys": ["ctrl+0"], "command": "cancel_build" },
 
  
- 
   
    {
         // alt + 1 for git bash
@@ -15,31 +14,6 @@
        }
    },
 
-
-        // vintage mode er keymap
-
-
-// {
-//     "keys": ["j", "j"],
-//     "command": "exit_insert_mode",
-//     "context":
-//     [
-//         { "key": "setting.command_mode", "operand": false },
-//         { "key": "setting.is_widget", "operand": false }
-//     ]
-// },
-
-
-    {
-        "keys": ["0"], "command": "move_to", "args": {"to": "eol", "extend": false}, "context": [
-            { "key": "setting.command_mode", "operator": "equal", "operand": true }
-        ]
-    },
-    {
-        "keys": ["1"], "command": "move_to", "args": {"to": "bol", "extend": false}, "context": [
-            { "key": "setting.command_mode", "operator": "equal", "operand": true }
-        ]
-    }
 
 
 

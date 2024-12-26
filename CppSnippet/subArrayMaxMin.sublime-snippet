@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+pair<int, int> subArrayMaxMin(int l, int r, vector<int>&v) {
+    int s = 0, mn = 0, mx = 0;
+    int A = 0, B = 0;
+    
+    for (int i = l; i <= r; i++) {
+        s += v[i];
+        A = min(A, s - mx);
+        B = max(B, s - mn);
+        mn = min(mn, s);
+        mx = max(mx, s);
+    }
+ 
+    return {A, B};
+}
+ 
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>subArrayMaxMin</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

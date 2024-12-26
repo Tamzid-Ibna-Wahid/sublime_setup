@@ -1,7 +1,6 @@
 [
 	{ "keys": ["ctrl+0"], "command": "cancel_build" },
-
- 
+    
   
    {
         // alt + 1 for git bash

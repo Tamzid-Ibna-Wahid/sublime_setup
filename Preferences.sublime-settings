@@ -4,7 +4,7 @@
 	], // Packages to ignore (disable). Add "Vintage" here if you don't want Vim keybindings.
 	"vintage_ctrl_keys": true, // Enables `Ctrl` shortcuts while using Vintage mode (Vim emulation).
 
-	"font_size": 11, // Sets the font size.
+	"font_size": 12, // Sets the font size.
 	"line_padding_top": 2, // Adds padding above each line to increase line spacing.
 	"line_padding_bottom": 5, // Adds padding below each line to increase line spacing.
 	"font_face": "Jetbrain Mono", // Sets the font to "Jetbrain Mono". Make sure this font is installed on your system.

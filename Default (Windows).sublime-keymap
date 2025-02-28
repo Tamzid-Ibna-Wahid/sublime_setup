@@ -11,8 +11,10 @@
            "cwd": "${file_path:${folder}}",
            "panel_name": "Terminus"
        }
+       
    },
-
+   
+   
 
 
 

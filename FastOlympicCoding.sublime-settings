@@ -1,0 +1,6 @@
+{
+    "default_language": "cpp",
+    "run_cmd": "g++ \"{source_file}\" -std=c++17 -o \"{file_name}\" && \"{file_name}\"",
+    "input_file": "input.txt",
+    "output_file": "output.txt"
+}

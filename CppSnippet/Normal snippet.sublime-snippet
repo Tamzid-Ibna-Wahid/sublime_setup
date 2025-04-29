@@ -2,15 +2,18 @@
     <content><![CDATA[
 #include<bits/stdc++.h>
 using namespace std;
+#define int long long
+#define fast_cin() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 
 
 signed main(){
 
-      $1
-
-
-  
-
+    fast_cin();
+        
+    $1    
+        
+        
+        
     return 0;
 }
 ]]></content>

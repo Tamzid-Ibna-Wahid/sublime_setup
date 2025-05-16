@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"installed_packages":
 	[
-		"CppFastOlympicCoding",
 		"Package Control",
 		"Terminus",
 		"VintageLines",

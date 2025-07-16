@@ -7,7 +7,7 @@ void dfs(int vertex){
     
     vis[vertex] = true;
 
-    for(int &child : g[vertex]){
+    for(auto &child : g[vertex]){
      
          if(vis[child])continue;
          

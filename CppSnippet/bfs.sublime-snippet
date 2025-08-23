@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-vector<int>g[N];
+vector<vector<int>>g(N);
 int vis[N];
 int level[N];
 

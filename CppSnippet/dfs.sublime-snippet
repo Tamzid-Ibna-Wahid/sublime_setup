@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-vector<int>g[N];
+vector<vector<int>>g(N);
 bool vis[N];
 void dfs(int vertex){
   

@@ -1,6 +1,6 @@
 {
 "cmd": ["g++.exe",
- "-O2",
+ "-DLOCAL", "-O2",
  "-std=c++17", "${file}", 
   "-o",
    "${file_base_name}.exe",
@@ -11,6 +11,4 @@
 "selector":"source.cpp"
 }
 
-// g++ -std=c++17 stdc++.h
-
-
+// g++ -DLOCAL -O2 main.cpp -o main

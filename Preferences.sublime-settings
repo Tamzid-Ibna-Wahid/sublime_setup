@@ -4,7 +4,7 @@
 	], // Packages to ignore (disable). Add "Vintage" here if you don't want Vim keybindings.
 	"vintage_ctrl_keys": true, // Enables `Ctrl` shortcuts while using Vintage mode (Vim emulation).
 
-	"font_size": 12, // Sets the font size.
+	"font_size": 11, // Sets the font size.
 	"line_padding_top": 2, // Adds padding above each line to increase line spacing.
 	"line_padding_bottom": 5, // Adds padding below each line to increase line spacing.
 	"font_face": "Jetbrain Mono", // Sets the font to "Jetbrain Mono". Make sure this font is installed on your system.
@@ -12,14 +12,14 @@
 
 	"trim_automatic_white_space": false, // If set to `true`, removes trailing whitespace inserted by auto-complete.
 	"translate_tabs_to_spaces": true, // Converts tabs to spaces automatically, ensuring code indentation uses spaces.
-	"word_wrap": true, // Disables word wrap so that lines do not automatically wrap; useful for viewing code in a single line.
+	"word_wrap": false, // Disables word wrap so that lines do not automatically wrap; useful for viewing code in a single line.
 	"auto_match_enabled": true, // Disables automatic bracket completion.
 	"auto_indent": true,
 	"animation_enabled": false,
 
 	// "save_on_focus_lost": true,
 
-	"color_scheme": "Mariana.sublime-color-scheme", // Sets the color scheme to Monokai, giving syntax highlighting colors.
+	"color_scheme": "Monokai.sublime-color-scheme", // Sets the color scheme to Monokai, giving syntax highlighting colors.
 
 	"auto_complete": true, // If uncommented, disables autocomplete suggestions.
 	"auto_complete_commit_on_tab": false, // If uncommented, pressing Tab accepts the auto-complete suggestion.

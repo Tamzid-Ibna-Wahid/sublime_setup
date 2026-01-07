@@ -55,6 +55,8 @@ int lcm(int a, int b){ if(a*b==0) return 0; else return a*b/__gcd(a,b);}
 
 std::vector<pair<int,int>>knight = {{-1,2}, {1,2}, {-1,-2}, {1,-2}, {2,-1}, {2,1}, {-2,-1}, {-2,1}};
 std::vector<pair<int, int>>movement = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+int dx[] = {1, -1, 0, 0};
+int dy[] = {0, 0, 1, -1};
 
 const int N = 5e5 + 10;
 

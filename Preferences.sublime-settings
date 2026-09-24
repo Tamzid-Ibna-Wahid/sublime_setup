@@ -1,13 +1,13 @@
 //setting in here override default
 {
-	"ignored_packages": [
+	"ignored_packages": [ "Vintage",
 	], // Packages to ignore (disable). Add "Vintage" here if you don't want Vim keybindings.
 	"vintage_ctrl_keys": true, // Enables `Ctrl` shortcuts while using Vintage mode (Vim emulation).
 
-	"font_size": 11, // Sets the font size.
+	"font_size": 12, // Sets the font size.
 	"line_padding_top": 2, // Adds padding above each line to increase line spacing.
 	"line_padding_bottom": 5, // Adds padding below each line to increase line spacing.
-	"font_face": "Jetbrain Mono", // Sets the font to "Jetbrain Mono". Make sure this font is installed on your system.
+	"font_face": "JetBrains Mono NL", // Sets the font to "Jetbrain Mono". Make sure this font is installed on your system.
 	"highlight_line": true, // Highlights the current line you're editing.
 
 	"trim_automatic_white_space": false, // If set to `true`, removes trailing whitespace inserted by auto-complete.
@@ -29,9 +29,32 @@
 	"index_files": true,
 
 
-	"vintage_lines.force_mode": true,    // relative line show kore
-	
+	"vintage_lines.force_mode": false,    // relative line show kore
 	
 
-
+	"wrap_width": 0,
+	/*"gnc_h22": true,*/
+	/*"gnc_m02": true,*/
+	/*"gnc_w3m10": true,*/
+	/*"gn_hide_tab_dropdown": true,*/
+	/*"gn_overlay_scroll_bars": true,*/
+	/*"gn_sidebar_box": true,*/
+	/*"gn_title_bar": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnwidg1": true,*/
+	/*"gnwidgo": true,*/
+	/*"gnc_h22": true,*/
+	/*"gnc_m03": true,*/
+	/*"gnc_w3m10": true,*/
+	/*"gnc_m04": true,*/
+	/*"gnc_h22": true,*/
+	/*"gnc_m04": true,*/
+	/*"gnc_w3m10": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": false,*/
+	/*"gnc_h22": true,*/
+	/*"gnc_m05": true,*/
+	/*"gnc_w3m10": true,*/
+	/*"gnc_m06": true,*/
 }

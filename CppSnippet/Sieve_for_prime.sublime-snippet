@@ -13,7 +13,6 @@ void sieve(){
                for(int j=i*i;j<N;j+=i) arr[j]=true;     //false=prime  true=composite
           }
      }
-
       for(int i=2;i<N;i++){
         if(!arr[i])prime.emplace_back(i);
      }

@@ -5,6 +5,7 @@
 		"Package Control",
 		"Terminus",
 		"VintageLines",
+		"WslBuild",
 	],
 	"in_process_packages":
 	[
